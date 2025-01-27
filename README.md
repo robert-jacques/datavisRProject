@@ -16,4 +16,4 @@ The composite visualisation comprises:
 * Plot 4. Bar Charts - Variance of Key Audio Features by Valence category.
 
  
-**The project’s findings suggest that personalised music recommendations could be enhanced through mood-based categorisation of tracks**
+**The project’s findings suggest that personalised music recommendations could be enhanced through mood-based categorisation of tracks.**
