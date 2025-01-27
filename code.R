@@ -138,7 +138,7 @@ spotify_audio_features_cat_plot_01 <- ggplot(spotify_audio_features_cat,        
   geom_boxplot(width = 0.2, colour = "black", linewidth = 0.2, alpha = 0.4,
                outlier.size = 2, outlier.colour = "darkorange", outlier.alpha = 0.2) +
   labs(title = "Plot 1.",
-       subtitle = "Distribution of Danceability across different Valence categories",
+       subtitle = "Distribution of Danceability across each Valence category",
        caption = caption_text_01,
        x = "Valence", y = "Danceability") +
   scale_fill_viridis_d(option = "plasma", direction = 1) +
@@ -217,7 +217,7 @@ spotify_audio_features_cat_plot_02 <- ggplot(spotify_audio_features_cor_matrix_m
         plot.caption.position = "panel",
         axis.title.x = element_text(size = 12, vjust = -1),
         axis.title.y = element_text(size = 12, vjust = 1.5),
-        axis.text.x = element_text(size = 10, hjust = 1, angle = 45),
+        axis.text.x = element_text(size = 10, hjust = 1),
         axis.text.y = element_text(size = 10),
         legend.title = element_text(size = 10, face = "bold", hjust = 0.5),
         legend.title.position = "top",
@@ -258,7 +258,7 @@ spotify_audio_features_cat_plot_03 <- ggplot(spotify_audio_features_cat_long,   
   facet_wrap(~ audio_feature, scales = "fixed", ncol = 2) +
   scale_fill_viridis_d(direction = 1) +
   labs(title = "Plot 3.",
-       subtitle = "Density Distributions of Audio Features by Valence",
+       subtitle = "Density Distributions of Key Audio Features by Valence category",
        caption = caption_text_03,
        x = "Value", y = "Density") +
   theme_minimal() +
@@ -321,7 +321,7 @@ spotify_audio_features_cat_plot_04 <- ggplot(variance_audio_features_long,      
             size = 4, hjust = 0.5, vjust = -0.7) +
   coord_cartesian(ylim = c(0, 0.08)) +
   labs(title = "Plot 4.",
-       subtitle = "Variance of Audio Features by Valence category",
+       subtitle = "Variance of Key Audio Features by Valence category",
        caption = caption_text_04,
        x = "Audio Feature", y = "Variance",
        fill = "Valence") +
